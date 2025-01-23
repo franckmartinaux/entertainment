@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wcast-qual -Wbad-function-cast -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wall -Wwrite-strings -Wsign-compare -Wformat-security -O3 -DNDEBUG  -rdynamic CMakeFiles/hmsa.dir/hmsa.c.o CMakeFiles/hmsa.dir/floppy.c.o CMakeFiles/hmsa.dir/__/__/src/file.c.o CMakeFiles/hmsa.dir/__/__/src/unzip.c.o  -o hmsa  ../../src/libFloppy.a -lm -lz 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wcast-qual -Wbad-function-cast -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wall -Wwrite-strings -Wsign-compare -Wformat-security -O3 -DNDEBUG  -rdynamic CMakeFiles/gst2ascii.dir/gst2ascii.c.o  -o gst2ascii 

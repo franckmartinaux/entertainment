@@ -1,0 +1,97 @@
+Performing C SOURCE FILE Test MUDFLAP_AVAILABLE failed with the following output:
+Change Dir: /root/src/hatari-1.9.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ebff7/fast && /usr/bin/make -f CMakeFiles/cmTC_ebff7.dir/build.make CMakeFiles/cmTC_ebff7.dir/build
+make[1]: Entering directory '/root/src/hatari-1.9.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ebff7.dir/src.c.o
+/usr/bin/cc   -DMUDFLAP_AVAILABLE   -fmudflapth -o CMakeFiles/cmTC_ebff7.dir/src.c.o   -c /root/src/hatari-1.9.0/CMakeFiles/CMakeTmp/src.c
+cc: warning: switch '-fmudflapth' is no longer supported
+Linking C executable cmTC_ebff7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebff7.dir/link.txt --verbose=1
+/usr/bin/cc  -DMUDFLAP_AVAILABLE    -rdynamic CMakeFiles/cmTC_ebff7.dir/src.c.o  -o cmTC_ebff7  -lmudflap 
+/usr/bin/ld: cannot find -lmudflap
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ebff7.dir/build.make:87: cmTC_ebff7] Error 1
+make[1]: Leaving directory '/root/src/hatari-1.9.0/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ebff7/fast] Error 2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /root/src/hatari-1.9.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8a46c/fast && /usr/bin/make -f CMakeFiles/cmTC_8a46c.dir/build.make CMakeFiles/cmTC_8a46c.dir/build
+make[1]: Entering directory '/root/src/hatari-1.9.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8a46c.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8a46c.dir/src.c.o   -c /root/src/hatari-1.9.0/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8a46c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a46c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_8a46c.dir/src.c.o  -o cmTC_8a46c 
+/usr/bin/ld: CMakeFiles/cmTC_8a46c.dir/src.c.o: in function `main':
+src.c:(.text+0x40): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x4c): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8a46c.dir/build.make:87: cmTC_8a46c] Error 1
+make[1]: Leaving directory '/root/src/hatari-1.9.0/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8a46c/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/src/hatari-1.9.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f32ca/fast && /usr/bin/make -f CMakeFiles/cmTC_f32ca.dir/build.make CMakeFiles/cmTC_f32ca.dir/build
+make[1]: Entering directory '/root/src/hatari-1.9.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f32ca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f32ca.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f32ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f32ca.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_f32ca.dir/CheckFunctionExists.c.o  -o cmTC_f32ca  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f32ca.dir/build.make:87: cmTC_f32ca] Error 1
+make[1]: Leaving directory '/root/src/hatari-1.9.0/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f32ca/fast] Error 2
+
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /root/src/hatari-1.9.0/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7a61f/fast && /usr/bin/make -f CMakeFiles/cmTC_7a61f.dir/build.make CMakeFiles/cmTC_7a61f.dir/build
+make[1]: Entering directory '/root/src/hatari-1.9.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a61f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_7a61f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7a61f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a61f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_7a61f.dir/CheckFunctionExists.c.o  -o cmTC_7a61f 
+/usr/bin/ld: CMakeFiles/cmTC_7a61f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_7a61f.dir/build.make:87: cmTC_7a61f] Error 1
+make[1]: Leaving directory '/root/src/hatari-1.9.0/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7a61f/fast] Error 2
+
+
+

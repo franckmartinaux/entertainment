@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFalcon.a  CMakeFiles/Falcon.dir/crossbar.c.o CMakeFiles/Falcon.dir/dsp.c.o CMakeFiles/Falcon.dir/dsp_core.c.o CMakeFiles/Falcon.dir/dsp_cpu.c.o CMakeFiles/Falcon.dir/dsp_disasm.c.o CMakeFiles/Falcon.dir/hostscreen.c.o CMakeFiles/Falcon.dir/microphone.c.o CMakeFiles/Falcon.dir/nvram.c.o CMakeFiles/Falcon.dir/videl.c.o
+/usr/bin/ranlib libFalcon.a

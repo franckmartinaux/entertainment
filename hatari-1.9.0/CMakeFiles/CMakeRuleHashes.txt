@@ -1,0 +1,24 @@
+# Hashes of file build rules.
+c23052b08b8b1d5fa08710deb155b6c4 CMakeFiles/uninstall
+4a088e148f0ec9d38b793354883c6c70 doc/CMakeFiles/manpages
+fcc93cfe6e6aee397b3bf00e68942aac doc/hatari.1.gz
+34c5ae38853c4402cd2db3f8db5989d0 python-ui/CMakeFiles/conftypes
+34c5ae38853c4402cd2db3f8db5989d0 python-ui/CMakeFiles/hatariui_man
+a2ecf66d66bdc6dc5fed97311ce70e1e python-ui/conftypes.py
+d6e27f6e1fb8a2b8370aa3b8aab1190c python-ui/hatariui.1.gz
+8ce3d49c4e9e5aaf538446e04b91b813 src/uae-cpu/cpudefs.c
+dfa6bf75f4e1a9890115a83b58ddea9a src/uae-cpu/cpuemu.c
+bd632e640c2a04c9dc35b7d952998715 tools/CMakeFiles/atari_convert_dir_man
+bd632e640c2a04c9dc35b7d952998715 tools/CMakeFiles/atari_hd_image_man
+bd632e640c2a04c9dc35b7d952998715 tools/CMakeFiles/zip2st_man
+f22b4cd3cf69c218fe2ddb5e5910a98b tools/atari-convert-dir.1.gz
+800fb4933a1122e936a23d0451699868 tools/atari-hd-image.1.gz
+18f5b329d07998b8c2dcbcea52f44d08 tools/debugger/CMakeFiles/gst2ascii_man
+18f5b329d07998b8c2dcbcea52f44d08 tools/debugger/CMakeFiles/hatari_profile_man
+988a675e5ac6b0911ecf946bc8872f26 tools/debugger/gst2ascii.1.gz
+118df58b4f8239c72b455d99eb21a0fb tools/debugger/hatari_profile.1.gz
+ca161e105a558d35adb917fb2b25a647 tools/hconsole/CMakeFiles/hconsole_man
+2e6681b99491a8f64b1619bf74736583 tools/hconsole/hconsole.1.gz
+0a4f2d24886179d197adc57d850e7571 tools/hmsa/CMakeFiles/hmsa_manpage
+a08113095c75c78b10de073481f64f31 tools/hmsa/hmsa.1.gz
+49541aa8c2015597786804392e0fc3cd tools/zip2st.1.gz
